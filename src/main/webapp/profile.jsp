@@ -10,7 +10,9 @@
     <title>Remove Session State Lab - Profile Page</title>
 </head>
 <body>
-
+<br/>
+Instance number: <%= System.getenv("CF_INSTANCE_INDEX") %>
+<br/>
 <h1>Your Profile</h1>
 <div>Username:</div>
 <div><%= session.getAttribute("username") %>
